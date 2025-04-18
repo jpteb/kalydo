@@ -1,0 +1,12 @@
+[workpsace.package]
+name = "kalydo"
+version = "0.1.0"
+edition = "2024"
+authors = ["Jan Philipp Tebernum <jan.tebernum@pm.me>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/jpteb/kalydo"
+
+[workspace]
+resolver = "3"
+members = ["muxide"]
+

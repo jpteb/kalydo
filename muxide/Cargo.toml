@@ -1,0 +1,9 @@
+[package]
+name = "muxide"
+version = "0.1.0"
+edition = "2024"
+# description = "A Rust library for parsing, multiplexing, and demultiplexing various media containers."
+description = "An experimental Rust library for handling media containers, including muxing, demuxing, and stream introspection."
+repository = "https://github.com/jpteb/kalydo"
+authors = ["Jan Philipp Tebernum <jan.tebernum@pm.me>"]
+license = "MIT OR Apache-2.0"
