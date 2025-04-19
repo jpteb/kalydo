@@ -1,14 +1,11 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+pub mod mkv;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+#[derive(Debug, thiserror::Error)]
+pub enum MuxideError {
+    #[error("Underlying I/O error: {0}")]
+    Io(#[from] std::io::Error),
+    #[error("Unexpected end of input")]
+    UnexpectedEnd,
+    #[error("VINT has incorrect length bit")]
+    VintInavlidLength,
 }

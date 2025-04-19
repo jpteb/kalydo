@@ -7,3 +7,6 @@ description = "An experimental Rust library for handling media containers, inclu
 repository = "https://github.com/jpteb/kalydo"
 authors = ["Jan Philipp Tebernum <jan.tebernum@pm.me>"]
 license = "MIT OR Apache-2.0"
+
+[dependencies]
+thiserror = "2.0.12"
